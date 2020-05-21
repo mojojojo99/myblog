@@ -1,12 +1,139 @@
 ---
-title: "Hello world!"
-last_modified_at: 2016-03-09T16:20:02-05:00
+title: "There are no mistakes, only happy accidents"
+last_modified_at: 2020-05-21T16:20:02-05:00
 categories:
-  - Random Musings
+  - Coding
 tags:
+  - Operating Systems
 header:
-  teaser: /assets/images/teaser.jpg
+  teaser: /assets/images/teaser-post1.jpg
 ---
 
-This is my first blog post!
+### Operating Systems (15-410) and my experience 
+
+<br>
+*Experience is what you get when you don't get what you want*.
+<br>
+
+In what you might call a deliberate rashness, my partner and I took the OS class (15-410) class, overloading it together with other CS classes like 15-451 and 15-259 (and other classes). The workload was indeed heavy during some weeks, but overall I thought it was not as bad as we expected. In this blog post, I'd like to recount some valuable personal reflections and learning points I had from this class.
+
+More technical discussions will be deferred to another post.
+
+<center>............................................</center>
+
+
+<br>
+
+#### There are no mistakes, only happy little surprises
+
+<br>
+
+A few weeks into the class and about Project 1 (the second project since its 0 indexed), I encountered a double fault while trying to install some interrupt handlers in the Interrupt Descriptor Tables. This simply means that while the operating systems is running, it ran into an exception and while that exception was being handled, a second exception was raised. While an average PC would just crash and burn, Simics allows us to debug this difficult situation by panicking and dumping purple pixie dust all over the screen.
+
+
+<br/>
+
+> If you are lucky you may not get all the way to a triple fault -- you may end up in our "purple screen of sadness" double-fault handler. 
+
+<br>
+
+
+Apparently , I should count my stars. There was a link next to that quote on how to solve triple/ double faults, which I of course, eagerly clicked. 
+
+Lo and behold clear and succinct step by step instructions on how to solve that nasty triple fault.
+
+
+>- First, take a moment to smile. If you had been running your kernel on a real PC, it would have suddenly cleared the screen, beeped, and rebooted. You would have no way to figure out wha had happened aside from comparing your source code to a previous version and reasoning forward from there. In 15-410, you have thousands of dollars of the world's best PC simultaion software at you rbeck and call. So maybe as you smile you should remind yourself how grateful you are to the Simics developers. 
+> <p></p> 
+>-  Now, take a second moment to smile. A triple fault means you are about to learn something! What's more, it's the kind of learning you can't get from books. Maybe you will learn something about the x86, something about OS structure, or something about debugging strategy 
+> <p></p> 
+>Q: Ok Mr Miyagi, enough telliming how to polish the car, can you give me some actual advice about my triple fault already?
+> <p></p>
+>A: Ah, grasshopper, you are in such a hurry...
+><br>
+
+I took a bitter aside moment to screenshot the instructions, before going back to the "purpple screen of sadness". 
+
+Cliched, but I think this was perhaps one of the most useful advice going forward.
+
+
+<br>
+
+<center>............................................</center>
+
+<br>
+
+#### Mr Miyagi's pearls of wisdom
+
+Of course the "worst" of this class was yet to come and was definitely during the last weeks of the Kernel Project, where we build up our own kernels from scratch in groups of two. 
+
+- Bugs can be anywhere in the miniscule gaps of interleaving multithreaded code.
+- Code is complete; (bad news) passes most *but* not all test cases. 
+
+This was probably one of the most undesirable cases of debugging problems, but one I'm sure most teams faced. You're so close yet so far. Together with the looming upcoming checkpoints and deadlines, this was probably one of the reasons that pushed my partner and I into a seemingly nerver ending flurry of arguments and disagreements. 
+
+Honestly, a week before the submission deadline, I couldn't even recall how it was like having a peaceful discussion, joking and laughing about small bugs/ mistakes here and there. The friciton we could probably have started mankind's first promethean flame. 
+
+At one point in time, we decided to consult our TA for some help with an vexing problem with our printf emitting random alien symbols before and after our correct format strings. At 11pm, we zoomed our TA, stepping through the malicious do while loop and state updating in sprintf, examining the arguments and registers meticulously. I was truthfully grabbing at the ends of the few strands of hair I have left.
+
+
+<br>
+
+"Now, that's interesting".
+
+<br>
+
+
+I recalled how our TA laughed and pointed out some weird behaviour of the console that he wasn't sure about. Half an hour later, we figured that we had totally forgotten to restore some of the caller saved registers (%esi etc.) in our syscall stub functions.  This still allowed most of the stubs to work most of the time, but in more elaborate functions like printf where registers like %esi are used, unsightly symptoms began showing up.
+
+But thats besides the point. For a moment when he first pointed out some of our mistakes. I was surprised. Not because of the unexpected behaviour of the system etc. but because it was a *ultra rare* smile at an error.  
+
+Usually, we would frown and sigh and go,  "the code's still spouting random bs."
+
+That night, I had a long overdue HTHT with my partner and we admitted that we lost that spark of enthusiasm we had when we first started out on Project 2 and Project 3, amidst the deadlines and checkpoints, and the tireless strive for perfection. 
+
+I think that was when we lost sight of the goal. 
+
+Initially I would start out the day happily staring at the simics debugger and end the day contentedly (and perhaps dumbly) staring at the same bug I still had no idea about. I was legitimately excited and looking forward to each new day where I got stuck and un-stucked myself. I had fun. 
+
+
+This was what reminded me of the very first advice from the triple fault page.
+
+<br>
+
+>1. First, take a moment to smile.
+
+<br>
+
+Mr Miyagi was right.
+
+<br>
+
+##### x Days After
+<br>
+
+After that meeting with our TA, we decided to change our attitudes approaching this project. Things lightened up a lot and we were much much more productive than before. Attitude and mindset towards solving problems were really impact multipliers. 
+
+Most people think they learn how to be more resilient in the face of bugs, or learn how to not make those stupid mistakes in the first place, but I think for me one of the valuable life lesson I learnt from this class is how to laugh and smile when I face a problem. Afterall, this is when we actually get to learn. 
+
+<br>
+
+##### x Days Before 
+<br>
+
+To be honest, I was very nervous about taking this class in sophomore spring, and I remember having multiple (almost similar) conversations with my partner multiple times on whether I was prepared for this class.
+
+<br>
+
+"Do you think I'm ready for this?"
+
+"You won't know until you do it. And while you're doing it, you might as well give it your best shot."
+
+"Hmmm, what if I'm not ready for this?"
+
+"..."
+
+<br> 
+
+In hindsight, not all moments of rashness are bad. And I'm really glad I took a leap of faith in this class. 
 
