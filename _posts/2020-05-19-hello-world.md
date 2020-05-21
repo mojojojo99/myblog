@@ -7,11 +7,8 @@ tags:
 excerpt: "<br/> <br/> <br/> "
 header:
   teaser: /assets/images/teaser.jpg
-  overlay_image: /assets/images/banner.jpg
+  overlay_image: /assets/images/teaser.jpg
   overlay_filter: 0.5
----
-
-
 ---
 
 
