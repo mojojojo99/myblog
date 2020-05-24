@@ -20,7 +20,7 @@ Welcome to my blog!
 
 I really didn't expect myself to come this far in making a blog: this was something I've always thought of doing but never brought myself to completing. But now that I'm done, I think all this was worth a shot. 
 
-To the people who helped made this possible (aka Fanpu) thanks for giving me your advice along the way which really made this process much more simpler :) 
+To the people who helped make this possible (aka Fanpu) thanks for giving me your advice along the way which really made this process much more simpler :) 
 <center>............................................</center>
 <p></p>
 
