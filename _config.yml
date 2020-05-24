@@ -28,7 +28,7 @@ teaser                   : "assets/images/teaser.jpg" # path of fallback teaser 
 logo                     : # "assets/images/logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs            : true # true, false (default)
-words_per_minute         : 200
+words_per_minute         : 150
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
@@ -95,8 +95,9 @@ analytics:
 author:
   name             : "Joelle"
   avatar           : "/assets/images/profile2.jpg"
-  bio              : "CS major at CMU, specialising in systems programming and robotics.
-                      Love playing piano jazz, illustrating and travelling in my free time!"
+  bio              : "CS major at CMU, specialising in systems programming and robotics. <br>
+                      Love playing piano jazz, illustrating and travelling in my free time! <br>
+                      All the pictures used in this blog are taken/ produced by myself!"
   location         : "Pittsburgh | Singapore"
   email            :
   links:

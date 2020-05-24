@@ -4,7 +4,7 @@ last_modified_at: 2016-03-09T16:20:02-05:00
 categories:
   - Random Musings
 tags:
-excerpt: "<br/> <br/> <br/> "
+excerpt: "<br/> <br/> <br/>"
 header:
   teaser: /assets/images/teaser.jpg
   overlay_image: /assets/images/teaser.jpg
