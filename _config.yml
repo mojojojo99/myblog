@@ -20,13 +20,13 @@ title                    : "Joelle's Blog"
 title_separator          : "|"
 subtitle                 :  # site tagline that appears below site title in masthead
 name                     : "Joelle"
-description              : "An amazing website."
+description              : "Down the rabbit hole"
 url                      :  "https://joellelim.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "mojojojo99/myblog" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "assets/images/teaser.jpg" # path of fallback teaser image
-logo                     : # "assets/images/logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+logo                     : "assets/images/bunny_logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : "Down the Rabbit Hole" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs            : true # true, false (default)
 words_per_minute         : 150
 comments:
@@ -75,7 +75,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : /assets/images/logo.jpg # Open Graph/Twitter default site image
+og_image                 : /assets/images/bunny_logo.jpg # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -104,28 +104,33 @@ author:
     - label: "joellelim11199@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:joellelim11199@gmail.com"
+    - label: "joellexl@andrew.cmu.edu"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:joellexl@andrew.cmu.edu"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       url: "https://facebook.com/joelle.lim.75"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/statixe00"
+      url: "https://github.com/mojojojo99"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/_jolim_/"
 
 # Site Footer
 footer:
-  links:
     - label: "joellelim11199@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:joellelim11199@gmail.com"
+    - label: "joellexl@andrew.cmu.edu"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:joellexl@andrew.cmu.edu"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       url: "https://facebook.com/joelle.lim.75"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/statixe00"
+      url: "https://github.com/mojojojo99"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/_jolim_/"
